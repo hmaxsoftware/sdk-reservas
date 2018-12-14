@@ -1,0 +1,27 @@
+{
+  "name": "sdk-reservas",
+  "version": "1.0.0",
+  "description": "Biblioteca de comunicação com API de reserva online da HMAX",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmaxsoftware/sdk-reservas.git"
+  },
+  "keywords": [
+    "hmax"
+  ],
+  "author": "HMAX Automação <desenvolvimento@hmax.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hmaxsoftware/sdk-reservas/issues"
+  },
+  "homepage": "https://github.com/hmaxsoftware/sdk-reservas#readme",
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  }
+}
