@@ -1,5 +1,3 @@
-# EM DESENVOLVIMENTO
-
 # hmax-reserva-online
 Biblioteca de comunicação com API de reserva online da HMAX
 
