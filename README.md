@@ -12,11 +12,15 @@ Biblioteca de comunicação com API de reserva online da HMAX
 npm install @hmaxsoftware/sdk-reservas --save
 ```
 
+## Doc
+
+[Link para a documentação no Postman]([https://www.google.com](https://documenter.getpostman.com/view/1414832/RzZ6JLrz))
+
 ## Usage
 
 ```js
 // Carrega SDK de integração
-const { ReservaOnlineClient } = require('sdk-reservas')
+const { ReservaOnlineClient } = require('@hmaxsoftware/sdk-reservas')
 
 // Define credenciais de autenticação
 const opt = {
@@ -37,7 +41,7 @@ const client = new ReservaOnlineClient(opt)
 
 ```js
 // Carrega SDK de integração
-const { ReservaOnlineClient } = require('sdk-reservas')
+const { ReservaOnlineClient } = require('@hmaxsoftware/sdk-reservas')
 const client = new ReservaOnlineClient({token: '3bqo7c837ey8nm31070y'})
 
 // Caso queira atualizar apenas uma URL, remova as tags indesejadas e estas não serão alteradas
@@ -77,7 +81,7 @@ client.mapearPortal('Portal/OTA Teste', '123', 'site_do_portal_ota_teste.com.br'
 
 ```js
 // Carrega SDK de integração
-const { ReservaOnlineClient } = require('sdk-reservas')
+const { ReservaOnlineClient } = require('@hmaxsoftware/sdk-reservas')
 const client = new ReservaOnlineClient({token: '3bqo7c837ey8nm31070y', user: 'hoteluser', password: 'hotelpassword'})
 
 // Desativar atualização do inventário para o hotel/pousada em questão
@@ -114,7 +118,7 @@ client.getTiposApto()
 ### Enviar reservas
 
 ```js
-const { ReservaOnlineClient } = require('sdk-reservas')
+const { ReservaOnlineClient } = require('@hmaxsoftware/sdk-reservas')
 const client = new ReservaOnlineClient({token: '3bqo7c837ey8nm31070y', user: 'hoteluser', password: 'hotelpassword'})
 
 const reserva = {
