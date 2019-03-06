@@ -1,6 +1,6 @@
 {
-  "name": "sdk-reservas",
-  "version": "1.0.1",
+  "name": "@hmaxsoftware/sdk-reservas",
+  "version": "1.0.2",
   "description": "Biblioteca de comunicação com API de reserva online da HMAX",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,9 @@
     "codecov": "^3.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }

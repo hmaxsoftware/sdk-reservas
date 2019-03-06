@@ -11,7 +11,7 @@ const defaultCredentials = {
 }
 
 // Definir ambiente de testes
-ReservaOnlineClient.setTest(process.env.TEST_ON_PRODUCTION || true)
+// ReservaOnlineClient.setTest(process.env.TEST_ON_PRODUCTION || true)
 
 function getError(response, defaultMsg) {
     if (response.error) {
