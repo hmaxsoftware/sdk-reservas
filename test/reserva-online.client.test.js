@@ -163,7 +163,7 @@ describe('ReservaOnlineClient', () => {
     })
 
     describe('#enviarReservas()', () => {
-        it('Deve permitir a inclusão de uma nova reserva', async () => {
+        it('Deve permitir incluir/editar reservas', async () => {
             const client = new ReservaOnlineClient(defaultCredentials)
             const reserva = {
                 id_integrador: '11301523',
@@ -191,9 +191,9 @@ describe('ReservaOnlineClient', () => {
                         {data: '2018-08-02', valor: 650.95}
                     ],
                     hospedes: [
-                        {id_integrador: 2721, nome: 'Cleidson Solid', tipo:'A'},
-                        {id_integrador: 2722, nome: 'Acompanhante', tipo:'A'},
-                        {id_integrador: 2723, nome: 'Acompanhante', tipo:'C'}
+                        {id_integrador: '2721', nome: 'Cleidson Solid', tipo:'A'},
+                        {id_integrador: '2722', nome: 'Acompanhante', tipo:'A'},
+                        {id_integrador: '2723', nome: 'Acompanhante', tipo:'C'}
                     ],
                     depositos:[{
                         id_integrador: '1',
