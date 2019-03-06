@@ -41,7 +41,7 @@ describe('ReservaOnlineClient', () => {
 
             const res = await client.mapearPortal(ota.nome, ota.id_integrador, ota.site)
             assert.equal(res.success, true, getError(res))
-        })
+        }).timeout(10000)
     })
 
     describe('#getPortais()', () => {
@@ -56,7 +56,7 @@ describe('ReservaOnlineClient', () => {
                 assert.equal(typeof ota.id, 'number', 'O código de identificação do Portal/OTA deve conter um número inteiro')
                 assert.equal(typeof ota.nome, 'string', 'O nome do Portal/OTA deve conter uma string válida')
             }
-        })
+        }).timeout(10000)
     })
 
     describe('#getCfgIntegrador()', () => {
@@ -67,7 +67,7 @@ describe('ReservaOnlineClient', () => {
             assert.equal(res.hasOwnProperty('url_inventario'), true, 'Tag url_inventario ausente')
             assert.equal(res.hasOwnProperty('url_portais'), true, 'Tag url_portais ausente')
             assert.equal(res.hasOwnProperty('url_confirmacao'), true, 'Tag url_confirmacao ausente')
-        })
+        }).timeout(10000)
     })
 
     describe('#setCfgIntegrador()', () => {
@@ -91,7 +91,7 @@ describe('ReservaOnlineClient', () => {
             
             // Voltar a configuração anterior
             await client.setCfgIntegrador(cfgAnterior)
-        })
+        }).timeout(10000)
     })
 
     describe('#getCartoes()', () => {
@@ -106,7 +106,7 @@ describe('ReservaOnlineClient', () => {
                 assert.equal(typeof cartao.id, 'number', 'O código de identificação do cartão deve conter um número inteiro')
                 assert.equal(typeof cartao.nome, 'string', 'O nome do cartão deve conter uma string válida')
             }
-        })
+        }).timeout(10000)
     })
 
     describe('#getCfgHotel()', () => {
@@ -115,7 +115,7 @@ describe('ReservaOnlineClient', () => {
 
             const res = await client.getCfgHotel(defaultCredentials)
             assert.equal(res.hasOwnProperty('atualizar_inventario'), true, 'Propriedade atualizar_inventario ausente')
-        })
+        }).timeout(10000)
     })
 
     describe('#setCfgHotel()', () => {
@@ -144,7 +144,7 @@ describe('ReservaOnlineClient', () => {
 
             // Redefinir configurações originais
             await client.setCfgHotel(cfgAnterior, {user: cfgNova.usuario, password: cfgNova.senha})
-        })
+        }).timeout(10000)
     })
 
     describe('#getTiposApto()', () => {
@@ -159,7 +159,7 @@ describe('ReservaOnlineClient', () => {
                 assert.equal(typeof tipo.id, 'number', 'O código de identificação do tipo de apto deve ser um número inteiro')
                 assert.equal(typeof tipo.nome, 'string', 'O nome do tipo de apto deve ser uma string válida')
             }
-        })
+        }).timeout(10000)
     })
 
     describe('#enviarReservas()', () => {
@@ -214,7 +214,7 @@ describe('ReservaOnlineClient', () => {
 
             const res = await client.enviarReservas([reserva], defaultCredentials)
             assert.equal(res.success, true, getError(res))
-        })
+        }).timeout(10000)
     })
 
     describe('#getInventario()', () => {
@@ -240,7 +240,7 @@ describe('ReservaOnlineClient', () => {
                     assert.equal(typeof inv.qtd, 'number', 'A quantidade do inventário deve ser um número inteiro')
                 }
             }
-        })
+        }).timeout(10000)
     })
 
 })
