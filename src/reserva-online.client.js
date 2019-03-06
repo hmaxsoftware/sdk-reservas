@@ -73,7 +73,7 @@ class ReservaOnlineClient {
         }
 
         if (credentials || this.user) opt.headers.User = credentials ? credentials.user : this.user
-        if (credentials || this.password) opt.headers.Uassword = credentials ? credentials.password : this.password
+        if (credentials || this.password) opt.headers.Password = credentials ? credentials.password : this.password
           
         const protocol = test ? http : https
         return new Promise((resolve, reject) => {
