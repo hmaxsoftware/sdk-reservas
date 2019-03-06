@@ -1,6 +1,6 @@
 {
   "name": "sdk-reservas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Biblioteca de comunicação com API de reserva online da HMAX",
   "main": "index.js",
   "scripts": {

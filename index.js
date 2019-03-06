@@ -1,7 +1,5 @@
 'use strict'
 
-const ReservaOnlineClient = require('./reserva-online.client')
+const ReservaOnlineClient = require('./src/reserva-online.client')
 
-module.exports = {
-    ReservaOnlineClient: ReservaOnlineClient
-}
+module.exports = {ReservaOnlineClient}
