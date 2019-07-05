@@ -14,7 +14,7 @@ npm install @hmaxsoftware/sdk-reservas --save
 
 ## Doc
 
-[Link para a documentação no Postman]([https://www.google.com](https://documenter.getpostman.com/view/1414832/RzZ6JLrz))
+[Link para documentação no Postman](https://documenter.getpostman.com/view/1414832/RzZ6JLrz)
 
 ## Usage
 
