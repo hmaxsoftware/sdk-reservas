@@ -1,6 +1,6 @@
 # hmax-reserva-online
 
-Biblioteca de comunicação com API de reserva online da HMAX (Atualizar)
+Biblioteca de comunicação com API de reserva online da HMAX
 
 [![travis build](https://img.shields.io/travis/hmaxsoftware/sdk-reservas.svg?style=flat-square)](https://travis-ci.org/hmaxsoftware/sdk-reservas)
 [![codecov](https://codecov.io/gh/hmaxsoftware/sdk-reservas/branch/master/graph/badge.svg)](https://codecov.io/gh/hmaxsoftware/sdk-reservas)
